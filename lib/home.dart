@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'nav_widgets.dart';
+import 'articles.dart';
+import 'home_display.dart';
 
 class Home extends StatefulWidget{
   @override
@@ -8,11 +9,11 @@ class Home extends StatefulWidget{
   }
 }
 class _HomeState extends State<Home> {
-  int _currentIndex=1;
-  final List<Widget> _children =[
-     Display(Colors.pink),
-     Display(Colors.red),
-     Display(Colors.green)
+  int _currentIndex=0;
+  List<Widget> _children =[
+     ArticlesFull(),
+     Articles(),
+     ArticlesFull()
    ];
  @override
  Widget build(BuildContext context) {
@@ -37,10 +38,10 @@ class _HomeState extends State<Home> {
          ),
          BottomNavigationBarItem(
            icon:  Icon(
-                          Icons.featured_play_list,
-                          color: Colors.blue,
-                          size: 50,
-                          ),
+                        Icons.featured_play_list,
+                        color: Colors.blue,
+                        size: 50,
+                        ),
            title: Text('Quotes'),
          ),
          BottomNavigationBarItem(
@@ -49,7 +50,7 @@ class _HomeState extends State<Home> {
                       color: Colors.blue,
                       size: 50,
                       ),
-           title: Text('Blogs')
+           title: Text('Articles')
          )
        ],
      ),
