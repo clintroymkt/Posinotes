@@ -1,7 +1,12 @@
-to clone this repository using vs code terminal, run "git clone 
-run "flutter packages get"
-use and emulator or physical device in debug mode run "flutter devices" to see if there is any connected device
-run "flutter run" or just hit f5
+First,please make sure you have The Flutter SDK installed on your machine, along with and appropriate IDE or text editor with flutter plug-ins installed. Check https://flutter.dev/docs/get-started/install for more details
+
+Clone the repository using git clone https://github.com/clintroymkt/Posinotes
+
+Type flutter packages get   - this will make sure you get all the required packages
+
+Make sure you have an emulator running in debug mode, type flutter devices to see any emulator devices or connected physical devices
+
+flutter run  will launch application from the terminal. If using Visual Studio code pressing F5 or selecting the run option also works. The same applies for IntelliJ or Android Studio.
 
 
 for this software development flutter is used because it is new, and trendy plus as developers who had never done mobile development before this was a good way to start. The IDE used is vs code community and version control is done by github. For the most part youtube videos were used in learning the dart language and flutter altogether, youtube has a wide community of developers all delivering there knowledge for free. The flutter Documentation is most helpful is explaining how flutter and the whole idea with everything in flutte being a widget. Building the code was challenging as transferring visualisation into code is always unpleasant but with the skills we managed to acquired this repository is what we have so far.
