@@ -9,6 +9,7 @@ class ArticlesFull extends StatelessWidget{
       
       children: <Widget>[
     Container(
+      alignment: Alignment.center,
       child: Card(
       
        child: InkWell(
@@ -32,6 +33,7 @@ class ArticlesFull extends StatelessWidget{
     );
     return Scaffold(
       body: card,
+      backgroundColor:Colors.blue[50]
     );
     
   }

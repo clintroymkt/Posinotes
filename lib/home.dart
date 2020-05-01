@@ -9,6 +9,7 @@ class Home extends StatefulWidget{
   }
 }
 class _HomeState extends State<Home> {
+  
   int _currentIndex=0;
   List<Widget> _children =[
      ArticlesFull(),
@@ -17,7 +18,7 @@ class _HomeState extends State<Home> {
    ];
  @override
  Widget build(BuildContext context) {
-   
+    
    return Scaffold(
      appBar: AppBar(
        centerTitle: true,

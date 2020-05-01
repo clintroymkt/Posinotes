@@ -17,6 +17,7 @@ environment:
   sdk: ">=2.1.0 <3.0.0"
 
 dependencies:
+  google_fonts: ^1.0.0
   flutter:
     sdk: flutter
 
@@ -73,3 +74,5 @@ flutter:
 
   assets:
     - assets/images/
+
+
