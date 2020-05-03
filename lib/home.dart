@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'articles.dart';
-import 'home_display.dart';
-
+import 'quotes.dart';
+import 'article_display.dart';
+import 'articles_list.dart';
+import 'outreach.dart';
 class Home extends StatefulWidget{
   @override
   State<StatefulWidget> createState(){
@@ -14,7 +15,8 @@ class _HomeState extends State<Home> {
   List<Widget> _children =[
      ArticlesFull(),
      Articles(),
-     ArticlesFull()
+     ArticleList(),
+     OutReach()
    ];
  @override
  Widget build(BuildContext context) {
@@ -33,7 +35,7 @@ class _HomeState extends State<Home> {
            icon: Icon(
                       Icons.home,
                       color: Colors.blue,
-                      size: 50,
+                      size: 20,
                       ),
            title: Text('Home'),
          ),
@@ -41,7 +43,7 @@ class _HomeState extends State<Home> {
            icon:  Icon(
                         Icons.featured_play_list,
                         color: Colors.blue,
-                        size: 50,
+                        size: 20,
                         ),
            title: Text('Quotes'),
          ),
@@ -49,9 +51,17 @@ class _HomeState extends State<Home> {
            icon: Icon(
                       Icons.art_track,
                       color: Colors.blue,
-                      size: 50,
+                      size: 20,
                       ),
            title: Text('Articles')
+         ),
+          BottomNavigationBarItem(
+           icon: Icon(
+                      Icons.help_outline,
+                      color: Colors.blue,
+                      size: 20,
+                      ),
+           title: Text('Reach out')
          )
        ],
      ),

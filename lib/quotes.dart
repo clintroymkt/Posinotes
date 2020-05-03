@@ -71,9 +71,8 @@ class Articles extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(5),
                   color: Colors.grey[50],
-                  
                   boxShadow: [
-                    BoxShadow(color:Colors.red[100], spreadRadius: 1)
+                    BoxShadow(color: Colors.red[100], spreadRadius: 1)
                   ],
                 ),
                 child: Text(
