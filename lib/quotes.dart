@@ -82,6 +82,7 @@ class Articles extends StatelessWidget {
                     textStyle: TextStyle(color: Colors.red),
                     fontWeight: FontWeight.w700,
                   ),
+                  
                 ),
               ),
             ),
