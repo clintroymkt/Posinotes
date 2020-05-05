@@ -23,18 +23,21 @@ class _HomeState extends State<Home> {
     
    return Scaffold(
      appBar: AppBar(
+       
        centerTitle: true,
        title: Text('Posinotes'),
      ),
      body: _children[_currentIndex],
      bottomNavigationBar: BottomNavigationBar(
        onTap: onTabTapped,
+       fixedColor: Colors.blueAccent[100],
+       
        currentIndex: _currentIndex, // this will be set when a new tab is tapped
        items: [
          BottomNavigationBarItem(
            icon: Icon(
                       Icons.home,
-                      color: Colors.blue,
+                      color: Colors.orange[300],
                       size: 20,
                       ),
            title: Text('Home'),
@@ -42,7 +45,7 @@ class _HomeState extends State<Home> {
          BottomNavigationBarItem(
            icon:  Icon(
                         Icons.featured_play_list,
-                        color: Colors.blue,
+                        color: Colors.orange[300],
                         size: 20,
                         ),
            title: Text('Quotes'),
@@ -50,7 +53,7 @@ class _HomeState extends State<Home> {
          BottomNavigationBarItem(
            icon: Icon(
                       Icons.art_track,
-                      color: Colors.blue,
+                      color: Colors.orange[300],
                       size: 20,
                       ),
            title: Text('Articles')
@@ -58,7 +61,7 @@ class _HomeState extends State<Home> {
           BottomNavigationBarItem(
            icon: Icon(
                       Icons.help_outline,
-                      color: Colors.blue,
+                      color: Colors.orange[300],
                       size: 20,
                       ),
            title: Text('Reach out')

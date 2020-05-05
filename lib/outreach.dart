@@ -9,7 +9,7 @@ class OutReach extends StatelessWidget {
       scrollDirection: Axis.vertical,
       children: <Widget>[
         Padding(
-          padding: const EdgeInsets.all(1),
+          padding: const EdgeInsets.all(5),
           child: Container(
             child: Material(
               color: Colors.grey[100],
@@ -49,16 +49,17 @@ class OutReach extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.all(5),
           child: Container(
-            margin: EdgeInsets.symmetric(vertical: 5.0),
+            
+            margin: EdgeInsets.symmetric(vertical: 3.0),
             height: 100.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
                 Container(
                   width: 220,
-                  padding: EdgeInsets.all(5),
+                  padding: EdgeInsets.all(2),
                   child: Material(
-                      elevation: 7.0,
+                      elevation: 14.0,
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.blueAccent[50],
                       child: ListTile(
@@ -78,13 +79,13 @@ class OutReach extends StatelessWidget {
                 ),
                 Container(
                   color: Colors.grey[100],
-                  constraints: BoxConstraints(maxWidth: 150, minWidth: 100),
+                  constraints: BoxConstraints(maxWidth: 100, minWidth: 100),
                   child: ClipRRect(
                     borderRadius: new BorderRadius.circular(2),
                     child: Image.asset(
                       "assets/images/lightbulb.jpg",
                       height: 100,
-                      width: 100,
+                      width: 85,
                     ),
                   ),
                 ),
@@ -93,12 +94,15 @@ class OutReach extends StatelessWidget {
           ),
         ),
         Padding(
-            padding: const EdgeInsets.all(1),
+            padding: const EdgeInsets.all(5),
             child: Material(
                 elevation: 14.0,
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.blueAccent[50],
-                child: Column(
+                child: Container(
+                  color: Colors.blueAccent[50],
+                  margin: EdgeInsets.symmetric(vertical:5),
+                    child: Column(
                   children: <Widget>[
                     Divider(color: Colors.black),
                     Text("Anonymous, Confidential, Talk Therapy"),
@@ -109,35 +113,27 @@ class OutReach extends StatelessWidget {
                     Text("Call or msg for a session and will call you back"),
                     Divider(color: Colors.black)
                   ],
-                ))),
+                )))),
         Padding(
-          padding: const EdgeInsets.all(1),
+          padding: const EdgeInsets.all(5),
           child: Material(
-            
             color: Colors.blueAccent[50],
             elevation: 14.0,
             borderRadius: BorderRadius.circular(10),
             child: Column(
-              
               children: <Widget>[
                 Text(
                   "If you are feeling overwhelmed, sad, angry, depressed, anxious, numb, disconnected, unhead, unseen and lost, or all of that and more that you might not even be able to put into words but you are need of support and someone who will listen",
-
-                   style: GoogleFonts.lato(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 19
-                    ),
-                    textAlign: TextAlign.justify,
+                  style: GoogleFonts.lato(
+                      fontWeight: FontWeight.w500, fontSize: 19),
+                  textAlign: TextAlign.justify,
                 ),
                 Text(
-                    "We know it's not easy to open up, get vulnerable or share feelings with people. We also know that as hard and scary as it may seem, it can be life savingto connect with someone who is non-judgemental, empathic and can guide you through some simple problem solving steps. These ateps will empower you to solve your own problems",
-                    
-                    style: GoogleFonts.lato(
-                      fontWeight: FontWeight.w500,
-                      fontSize: 19
-                    ),
-                    textAlign: TextAlign.justify,
-                    ),
+                  "We know it's not easy to open up, get vulnerable or share feelings with people. We also know that as hard and scary as it may seem, it can be life savingto connect with someone who is non-judgemental, empathic and can guide you through some simple problem solving steps. These ateps will empower you to solve your own problems",
+                  style: GoogleFonts.lato(
+                      fontWeight: FontWeight.w500, fontSize: 19),
+                  textAlign: TextAlign.justify,
+                ),
               ],
             ),
           ),
