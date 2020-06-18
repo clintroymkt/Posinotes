@@ -52,37 +52,45 @@ class Articles extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
         return Container(
           margin: const EdgeInsets.all(1),
-          padding: const EdgeInsets.all(5),
-          decoration: BoxDecoration(border: Border.all(color: Colors.red)),
-          child: ListTile(
-            title: Center(
-              child: new Text(
-                quotes[index].text,
-                textAlign: TextAlign.justify,
-                style: GoogleFonts.lato(
-                  textStyle: TextStyle(color: Colors.black, letterSpacing: .20),
-                  fontWeight: FontWeight.w500,
+          //padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.only(top: 5,left: 5,right: 5) ,
+
+          child: Material(
+            color: Colors.blueAccent[50],
+            elevation: 7.0,
+            borderRadius: BorderRadius.circular(10),
+            shadowColor: Color(0x802196F3),
+            child: ListTile(
+              title: Center(
+                child: new Text(
+                  quotes[index].text,
+                  textAlign: TextAlign.justify,
+                  style: GoogleFonts.lato(
+                    textStyle:
+                        TextStyle(color: Colors.black, letterSpacing: .20),
+                    fontWeight: FontWeight.w500,
+                  ),
                 ),
               ),
-            ),
-            subtitle: Center(
-              child: Container(
-                margin: const EdgeInsets.all(8),
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(5),
-                  color: Colors.grey[50],
-                  boxShadow: [
-                    BoxShadow(color: Colors.red[100], spreadRadius: 1)
-                  ],
-                ),
-                child: Text(
-                  quotes[index].author,
-                  textAlign: TextAlign.right,
-                  style: GoogleFonts.mcLaren(
-                    textStyle: TextStyle(color: Colors.red),
-                    fontWeight: FontWeight.w700,
-                  ),
+              subtitle: Center(
+                child: Container(
                   
+                  margin: const EdgeInsets.only(top: 10),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    color: Colors.grey[50],
+                    boxShadow: [
+                      BoxShadow(color: Colors.blueAccent[200], spreadRadius: 1)
+                    ],
+                  ),
+                  child: Text(
+                    quotes[index].author,
+                    textAlign: TextAlign.right,
+                    style: GoogleFonts.mcLaren(
+                      textStyle: TextStyle(color: Colors.blueAccent[100]),
+                      fontWeight: FontWeight.w700,
+                    ),
+                  ),
                 ),
               ),
             ),

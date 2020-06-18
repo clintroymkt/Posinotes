@@ -13,8 +13,8 @@ class OutReach extends StatelessWidget {
           child: Container(
             child: Material(
               color: Colors.grey[100],
-              elevation: 14.0,
-              borderRadius: BorderRadius.circular(1),
+              elevation: 7.0,
+              borderRadius: BorderRadius.circular(10),
               child: Container(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,8 +59,8 @@ class OutReach extends StatelessWidget {
                   width: 220,
                   padding: EdgeInsets.all(2),
                   child: Material(
-                      elevation: 14.0,
-                      borderRadius: BorderRadius.circular(10),
+                      elevation: 7.0,
+                      borderRadius: BorderRadius.circular(1),
                       color: Colors.blueAccent[50],
                       child: ListTile(
                           title: Text(
@@ -81,7 +81,7 @@ class OutReach extends StatelessWidget {
                   color: Colors.grey[100],
                   constraints: BoxConstraints(maxWidth: 100, minWidth: 100),
                   child: ClipRRect(
-                    borderRadius: new BorderRadius.circular(2),
+                    borderRadius: new BorderRadius.circular(10),
                     child: Image.asset(
                       "assets/images/lightbulb.jpg",
                       height: 100,
@@ -105,9 +105,13 @@ class OutReach extends StatelessWidget {
                     child: Column(
                   children: <Widget>[
                     Divider(color: Colors.black),
-                    Text("Anonymous, Confidential, Talk Therapy"),
+                    Text("Anonymous, Confidential, Talk Therapy", 
+                    style: GoogleFonts.lato(
+                      fontWeight: FontWeight.w500, fontSize: 19),
+                  textAlign: TextAlign.justify
+                    ),
                     Text("+263 784 845 294"),
-                    Divider(color: Colors.red),
+                    Divider(color: Colors.red,),
                     Text("Free sessions OPEN LINE"),
                     Divider(color: Colors.red),
                     Text("Call or msg for a session and will call you back"),

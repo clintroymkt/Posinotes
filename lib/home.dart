@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'quotes.dart';
 import 'article_display.dart';
+import 'quotes.dart';
+
 import 'articles_list.dart';
 import 'outreach.dart';
 class Home extends StatefulWidget{
@@ -9,6 +10,7 @@ class Home extends StatefulWidget{
     return _HomeState();
   }
 }
+
 class _HomeState extends State<Home> {
   
   int _currentIndex=0;
